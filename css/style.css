@@ -29,3 +29,40 @@
 .about-cta .container{display:flex;flex-direction:column;align-items:center}
 .about-cta .actions{justify-content:center}
 @media(max-width:720px){.about-heading{padding-top:55px;padding-bottom:55px}.about-feature{grid-template-columns:1fr;padding-top:45px;padding-bottom:45px}.about-portrait{min-height:330px}.about-values-grid{grid-template-columns:1fr;gap:20px}.about-gallery-heading{display:block}.about-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,145px)}.gallery-slot.large{grid-row:span 2}.about-cta h2{font-size:1.8rem}}
+
+/* AVi visual refinement */
+:root{--shadow:0 20px 45px rgba(45,34,26,.10)}
+body{background:linear-gradient(180deg,#faf7f2 0%,#fffdf9 55%,#faf7f2 100%)}
+.site-header{position:relative;z-index:2;box-shadow:0 2px 13px rgba(40,30,20,.04)}
+.logo{color:#5c493c}.nav-links a{transition:color .2s ease,opacity .2s ease}.nav-links a:hover{color:#9b7457}
+.button{transition:transform .2s ease,box-shadow .2s ease,background .2s ease;cursor:pointer}
+.button:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(44,34,25,.16)}
+.panel{box-shadow:0 8px 28px rgba(52,42,31,.045);transition:transform .25s ease,box-shadow .25s ease}
+.panel:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.placeholder{background:linear-gradient(140deg,#eee5da,#cebca7);border:1px solid #d7c5b2;position:relative;overflow:hidden}
+.placeholder:after,.gallery-slot:after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.3);pointer-events:none}
+.gallery-slot{position:relative;overflow:hidden;transition:filter .2s ease}.gallery-slot:hover{filter:brightness(1.05)}
+.section-head{max-width:740px;margin-bottom:32px}.section-head h2{margin:8px 0}.section-head p{color:var(--muted)}
+.page-banner{background:radial-gradient(circle at 88% 0%,#e4d5c5 0,transparent 48%),linear-gradient(120deg,#f0e5d8,#fcf9f5);border-bottom:1px solid var(--border)}
+.page-banner .container{padding-top:72px;padding-bottom:72px}
+.page-banner h1{margin:10px 0}.page-banner .lead{max-width:750px}
+.feature-line{height:1px;background:linear-gradient(90deg,#bfa58d,transparent);margin:22px 0}
+.editorial-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.editorial-card{background:#fffdf9;border:1px solid var(--border);padding:24px;box-shadow:0 8px 24px rgba(50,37,22,.035);transition:transform .2s}
+.editorial-card:hover{transform:translateY(-4px)}
+.editorial-card h3{font-size:1.5rem;line-height:1.25;margin:12px 0}
+.editorial-card p{color:var(--muted)}
+.editorial-card .placeholder{height:205px;margin:-24px -24px 24px}
+.narrow{max-width:900px}.contact-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:start}
+.contact-feature{background:#e8dccc;padding:38px;min-height:300px;display:flex;flex-direction:column;justify-content:center}
+.contact-feature h2{font-size:2.5rem}.contact-feature p{color:#66574a}
+.policy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.policy-grid .panel h2{font-size:1.55rem}
+.book-product .cover-art{height:300px}.retail-options{background:#f4eee6;padding:20px;margin-top:24px;border-left:3px solid #b79a81}.retail-options h3{margin-top:0}
+.shop-notice{background:#f4eee6;border:1px solid var(--border);padding:18px;margin-top:30px}
+.hero .container{padding-top:82px;padding-bottom:82px}
+.home-highlight{background:#f0e6db}.home-highlight .container{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.home-highlight .placeholder{min-height:340px}
+.reading-badge{font:600 .72rem Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.reader-shell{background:linear-gradient(90deg,#f9f4eb 0,#fffdf9 8%,#fffdf9 92%,#f4ecdf 100%);border-radius:3px}
+@media(max-width:760px){.editorial-cards,.contact-layout,.policy-grid,.home-highlight .container{grid-template-columns:1fr}.page-banner .container{padding-top:46px;padding-bottom:46px}.hero .container{padding-top:50px;padding-bottom:50px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
